@@ -3,8 +3,8 @@ import java.util.Random;
 public class MagicBox<T>  {
     private T[] items;
 
-    public MagicBox(int arrayLeigth ){
-        this.items =(T[]) new Object[arrayLeigth];
+    public MagicBox(int arrayLength ){
+        this.items =(T[]) new Object[arrayLength];
     }
 
     public boolean add(T item){
@@ -13,8 +13,6 @@ public class MagicBox<T>  {
                 items[i] = item;
                 System.out.println(item + " Добавлено!");
                 return true;
-            } else {
-                continue;
             }
         }
         return false;
